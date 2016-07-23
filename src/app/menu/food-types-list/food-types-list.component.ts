@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ROUTER_DIRECTIVES} from "@angular/router";
 
 import {Recipe} from "../recipe";
-import {FoodType} from "../food-type";
+import {FoodType} from "../food-type-class";
 
 import {MenuService} from "../menu.service";
 import { FoodTypeComponent } from './food-type.component';
@@ -24,8 +24,8 @@ export class FoodTypesListComponent implements OnInit {
 
   ngOnInit() {
     console.log("testing if logs");
-    this.recipes = this.menuService.getRecipes();
+    //this.recipes = this.menuService.getRecipes();
     this.foodTypes = this.menuService.getAllTypes();
-    console.log(this.foodTypes);
+    console.log(this.recipes);
   }
 }

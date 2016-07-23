@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Recipe} from "../recipe";
-import {FoodType} from "../food-type";
+import {FoodType} from "../food-type-class";
 import {ROUTER_DIRECTIVES} from "@angular/router";
 
 
@@ -13,10 +13,11 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
   directives: [ROUTER_DIRECTIVES]
 })
 export class FoodTypeComponent implements OnInit {
-  //@Input() recipe: Recipe;
+  @Input() recipe: Recipe;
   @Input() foodType: FoodType;
   @Input() typeId: number;
 
   ngOnInit() {
+    console.log(this.recipe);
   }
 }

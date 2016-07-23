@@ -7,4 +7,4 @@ var FoodType = (function () {
     return FoodType;
 }());
 exports.FoodType = FoodType;
-//# sourceMappingURL=food-type.js.map
+//# sourceMappingURL=food-type-class.js.map

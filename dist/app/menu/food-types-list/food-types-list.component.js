@@ -20,9 +20,9 @@ var FoodTypesListComponent = (function () {
     }
     FoodTypesListComponent.prototype.ngOnInit = function () {
         console.log("testing if logs");
-        this.recipes = this.menuService.getRecipes();
+        //this.recipes = this.menuService.getRecipes();
         this.foodTypes = this.menuService.getAllTypes();
-        console.log(this.foodTypes);
+        console.log(this.recipes);
     };
     FoodTypesListComponent = __decorate([
         core_1.Component({

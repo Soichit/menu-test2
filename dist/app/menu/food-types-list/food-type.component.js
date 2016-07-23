@@ -9,16 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var food_type_1 = require("../food-type");
+var recipe_1 = require("../recipe");
+var food_type_class_1 = require("../food-type-class");
 var router_1 = require("@angular/router");
 var FoodTypeComponent = (function () {
     function FoodTypeComponent() {
     }
     FoodTypeComponent.prototype.ngOnInit = function () {
+        console.log(this.recipe);
     };
     __decorate([
         core_1.Input(), 
-        __metadata('design:type', food_type_1.FoodType)
+        __metadata('design:type', recipe_1.Recipe)
+    ], FoodTypeComponent.prototype, "recipe", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', food_type_class_1.FoodType)
     ], FoodTypeComponent.prototype, "foodType", void 0);
     __decorate([
         core_1.Input(), 

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Recipe} from "./recipe";
-import {FoodType} from "./food-type";
+import {FoodType} from "./food-type-class";
 
 import {Ingredient} from "../shared/ingredient";
 
@@ -14,13 +14,15 @@ export class MenuService {
         ]),
         new Recipe('Summer Salad', 'Okayish', 'http://ohmyveggies.com/wp-content/uploads/2013/06/the_perfect_summer_salad.jpg', [])
     ];
-    
-    private foodtypes: FoodType[] = [
+
+    private foodTypes: FoodType[] = [
         new FoodType('appetizer', ['salad', 'soup', 'biscuits']),
         new FoodType('lunch', ['sandwich', 'hamburger', 'hotdog']),
         new FoodType('dinner', ['steak', 'chicken', 'pork']),
         new FoodType('dessert', ['cake', 'icecream', 'pudding']),
     ];
+
+
 
     constructor() {}
 
@@ -35,12 +37,12 @@ export class MenuService {
     deleteRecipe(recipe: Recipe) {
         this.recipes.splice(this.recipes.indexOf(recipe), 1);
     }
-    
+
     getAllTypes() {
-        return this.foodtypes;
+        return this.foodTypes;
     }
     
     getFoodType(id: number) {
-        return this.foodtypes[id];
+        return this.foodTypes[id];
     }
 }

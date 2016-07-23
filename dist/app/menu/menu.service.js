@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var recipe_1 = require("./recipe");
-var food_type_1 = require("./food-type");
+var food_type_class_1 = require("./food-type-class");
 var ingredient_1 = require("../shared/ingredient");
 var MenuService = (function () {
     function MenuService() {
@@ -21,11 +21,11 @@ var MenuService = (function () {
             ]),
             new recipe_1.Recipe('Summer Salad', 'Okayish', 'http://ohmyveggies.com/wp-content/uploads/2013/06/the_perfect_summer_salad.jpg', [])
         ];
-        this.foodtypes = [
-            new food_type_1.FoodType('appetizer', ['salad', 'soup', 'biscuits']),
-            new food_type_1.FoodType('lunch', ['sandwich', 'hamburger', 'hotdog']),
-            new food_type_1.FoodType('dinner', ['steak', 'chicken', 'pork']),
-            new food_type_1.FoodType('dessert', ['cake', 'icecream', 'pudding']),
+        this.foodTypes = [
+            new food_type_class_1.FoodType('appetizer', ['salad', 'soup', 'biscuits']),
+            new food_type_class_1.FoodType('lunch', ['sandwich', 'hamburger', 'hotdog']),
+            new food_type_class_1.FoodType('dinner', ['steak', 'chicken', 'pork']),
+            new food_type_class_1.FoodType('dessert', ['cake', 'icecream', 'pudding']),
         ];
     }
     MenuService.prototype.getRecipes = function () {
@@ -38,10 +38,10 @@ var MenuService = (function () {
         this.recipes.splice(this.recipes.indexOf(recipe), 1);
     };
     MenuService.prototype.getAllTypes = function () {
-        return this.foodtypes;
+        return this.foodTypes;
     };
     MenuService.prototype.getFoodType = function (id) {
-        return this.foodtypes[id];
+        return this.foodTypes[id];
     };
     MenuService = __decorate([
         core_1.Injectable(), 
