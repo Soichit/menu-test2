@@ -28,6 +28,8 @@ export class FoodItemsListComponent implements OnInit, OnDestroy {
         (params: any) => {
           this.typeIndex = params['id'];
           this.selectedType = this.menuService.getAllFoods(this.typeIndex);
+          this.selectedFood = undefined;
+          console.log(this.selectedFood);
         }
     )
   }
@@ -38,5 +40,13 @@ export class FoodItemsListComponent implements OnInit, OnDestroy {
 
   onClick() {
     //console.log(this.selectedFood);
+  }
+
+  onEdit() {
+
+  }
+
+  onDelete() {
+
   }
 }

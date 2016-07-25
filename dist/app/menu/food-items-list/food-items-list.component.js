@@ -23,6 +23,8 @@ var FoodItemsListComponent = (function () {
         this.subscription = this.route.params.subscribe(function (params) {
             _this.typeIndex = params['id'];
             _this.selectedType = _this.menuService.getAllFoods(_this.typeIndex);
+            _this.selectedFood = undefined;
+            console.log(_this.selectedFood);
         });
     };
     FoodItemsListComponent.prototype.ngOnDestroy = function () {
@@ -30,6 +32,10 @@ var FoodItemsListComponent = (function () {
     };
     FoodItemsListComponent.prototype.onClick = function () {
         //console.log(this.selectedFood);
+    };
+    FoodItemsListComponent.prototype.onEdit = function () {
+    };
+    FoodItemsListComponent.prototype.onDelete = function () {
     };
     FoodItemsListComponent = __decorate([
         core_1.Component({

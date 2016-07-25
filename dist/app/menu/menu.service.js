@@ -14,49 +14,53 @@ var food_type_class_1 = require("./food-type-class");
 var ingredient_1 = require("../shared/ingredient");
 var MenuService = (function () {
     function MenuService() {
-        this.recipes = [
-            new recipe_1.Recipe('Schnitzel', 'Very tasty', 'http://images.derberater.de/files/imagecache/456xXXX_berater/berater/slides/WienerSchnitzel.jpg', [
-                new ingredient_1.Ingredient('French Fries', 2),
-                new ingredient_1.Ingredient('Pork Meat', 1)
-            ]),
-            new recipe_1.Recipe('Summer Salad', 'Okayish', 'http://ohmyveggies.com/wp-content/uploads/2013/06/the_perfect_summer_salad.jpg', [])
-        ];
+        // private recipes: Recipe[] = [
+        //     new Recipe('Schnitzel', 'Very tasty', 'http://images.derberater.de/files/imagecache/456xXXX_berater/berater/slides/WienerSchnitzel.jpg', [
+        //         new Ingredient('French Fries', 2),
+        //         new Ingredient('Pork Meat', 1)
+        //     ]),
+        //     new Recipe('Summer Salad', 'Okayish', 'http://ohmyveggies.com/wp-content/uploads/2013/06/the_perfect_summer_salad.jpg', [])
+        // ];
         this.foodTypes = [
             new food_type_class_1.FoodType('Appetizers', [
-                new recipe_1.Recipe('salad', 'description', 'http://cooking.my.panasonic.com/wp-content/uploads/2016/06/salad.jpg', [
+                new recipe_1.Recipe('salad', 5.85, 'description', 'http://cooking.my.panasonic.com/wp-content/uploads/2016/06/salad.jpg', [
                     new ingredient_1.Ingredient('lettuce', 2),
                     new ingredient_1.Ingredient('tomatoes', 4),
                     new ingredient_1.Ingredient('olives', 8)
                 ]),
-                new recipe_1.Recipe('soup', 'description', 'http://www.my7daydiet.com/images/wonder-soup.jpg', []),
-                new recipe_1.Recipe('fries', 'description', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQogn8pSGg-Omi2P28rGFQMwaZbYpM5qbmYqNskoOKF-ALSo8aJ', [])
+                new recipe_1.Recipe('soup', 3.95, 'description', 'http://www.my7daydiet.com/images/wonder-soup.jpg', []),
+                new recipe_1.Recipe('fries', 2.99, 'description', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQogn8pSGg-Omi2P28rGFQMwaZbYpM5qbmYqNskoOKF-ALSo8aJ', [])
             ]),
             new food_type_class_1.FoodType('Lunch', [
-                new recipe_1.Recipe('sandwich', '', '', []),
-                new recipe_1.Recipe('hamburger', '', '', []),
-                new recipe_1.Recipe('hotdog', '', '', [])
+                new recipe_1.Recipe('sandwich', 6.99, '', '', []),
+                new recipe_1.Recipe('hamburger', 6.99, '', '', []),
+                new recipe_1.Recipe('hotdog', 6.99, '', '', [])
             ]),
             new food_type_class_1.FoodType('Dinner', [
-                new recipe_1.Recipe('steak', '', '', []),
-                new recipe_1.Recipe('chicken', '', '', []),
-                new recipe_1.Recipe('pork', '', '', [])
+                new recipe_1.Recipe('steak', 6.99, '', '', []),
+                new recipe_1.Recipe('chicken', 6.99, '', '', []),
+                new recipe_1.Recipe('pork', 6.99, '', '', [])
             ]),
             new food_type_class_1.FoodType('Desserts', [
-                new recipe_1.Recipe('cake', '', '', []),
-                new recipe_1.Recipe('icecream', '', '', []),
-                new recipe_1.Recipe('pudding', '', '', [])
+                new recipe_1.Recipe('cake', 6.99, '', '', []),
+                new recipe_1.Recipe('ice cream', 6.99, '', '', []),
+                new recipe_1.Recipe('pudding', 6.99, '', '', [])
             ])
         ];
     }
-    MenuService.prototype.getRecipes = function () {
+    /*
+    getRecipes() {
         return this.recipes;
-    };
-    MenuService.prototype.getRecipe = function (id) {
+    }
+
+    getRecipe(id: number) {
         return this.recipes[id];
-    };
-    MenuService.prototype.deleteRecipe = function (recipe) {
+    }
+
+    deleteRecipe(recipe: Recipe) {
         this.recipes.splice(this.recipes.indexOf(recipe), 1);
-    };
+    }
+    */
     MenuService.prototype.getAllTypes = function () {
         return this.foodTypes;
     };
