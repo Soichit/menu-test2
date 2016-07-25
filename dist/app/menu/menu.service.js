@@ -22,10 +22,26 @@ var MenuService = (function () {
             new recipe_1.Recipe('Summer Salad', 'Okayish', 'http://ohmyveggies.com/wp-content/uploads/2013/06/the_perfect_summer_salad.jpg', [])
         ];
         this.foodTypes = [
-            new food_type_class_1.FoodType('appetizer', ['salad', 'soup', 'biscuits']),
-            new food_type_class_1.FoodType('lunch', ['sandwich', 'hamburger', 'hotdog']),
-            new food_type_class_1.FoodType('dinner', ['steak', 'chicken', 'pork']),
-            new food_type_class_1.FoodType('dessert', ['cake', 'icecream', 'pudding']),
+            new food_type_class_1.FoodType('Appetizers', [
+                new recipe_1.Recipe('salad', 'description', 'http://cooking.my.panasonic.com/wp-content/uploads/2016/06/salad.jpg', []),
+                new recipe_1.Recipe('soup', 'description', 'http://www.my7daydiet.com/images/wonder-soup.jpg', []),
+                new recipe_1.Recipe('fries', 'description', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQogn8pSGg-Omi2P28rGFQMwaZbYpM5qbmYqNskoOKF-ALSo8aJ', [])
+            ]),
+            new food_type_class_1.FoodType('Lunch', [
+                new recipe_1.Recipe('sandwich', '', '', []),
+                new recipe_1.Recipe('hamburger', '', '', []),
+                new recipe_1.Recipe('hotdog', '', '', [])
+            ]),
+            new food_type_class_1.FoodType('Dinner', [
+                new recipe_1.Recipe('steak', '', '', []),
+                new recipe_1.Recipe('chicken', '', '', []),
+                new recipe_1.Recipe('pork', '', '', [])
+            ]),
+            new food_type_class_1.FoodType('Desserts', [
+                new recipe_1.Recipe('cake', '', '', []),
+                new recipe_1.Recipe('icecream', '', '', []),
+                new recipe_1.Recipe('pudding', '', '', [])
+            ])
         ];
     }
     MenuService.prototype.getRecipes = function () {
@@ -40,8 +56,11 @@ var MenuService = (function () {
     MenuService.prototype.getAllTypes = function () {
         return this.foodTypes;
     };
-    MenuService.prototype.getFoodType = function (id) {
+    MenuService.prototype.getFoodItems = function (id) {
         return this.foodTypes[id];
+    };
+    MenuService.prototype.getFoodItem = function (id1, id2) {
+        return this.foodTypes[id1][id2];
     };
     MenuService = __decorate([
         core_1.Injectable(), 

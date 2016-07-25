@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require("@angular/router");
 var menu_service_1 = require("../menu.service");
-var food_type_component_1 = require('./food-type.component');
 var FoodTypesListComponent = (function () {
     function FoodTypesListComponent(menuService) {
         this.menuService = menuService;
@@ -19,17 +18,17 @@ var FoodTypesListComponent = (function () {
         this.foodTypes = [];
     }
     FoodTypesListComponent.prototype.ngOnInit = function () {
-        console.log("testing if logs");
+        //console.log("testing if logs");
         //this.recipes = this.menuService.getRecipes();
         this.foodTypes = this.menuService.getAllTypes();
-        console.log(this.recipes);
+        //console.log(this.recipes);
     };
     FoodTypesListComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'food-types-list',
             templateUrl: 'food-types-list.component.html',
-            directives: [food_type_component_1.FoodTypeComponent, router_1.ROUTER_DIRECTIVES]
+            directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [menu_service_1.MenuService])
     ], FoodTypesListComponent);

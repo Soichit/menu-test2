@@ -5,7 +5,6 @@ import {Recipe} from "../recipe";
 import {FoodType} from "../food-type-class";
 
 import {MenuService} from "../menu.service";
-import { FoodTypeComponent } from './food-type.component';
 
 
 
@@ -13,7 +12,7 @@ import { FoodTypeComponent } from './food-type.component';
   moduleId: module.id,
   selector: 'food-types-list',
   templateUrl: 'food-types-list.component.html',
-  directives: [FoodTypeComponent, ROUTER_DIRECTIVES]
+  directives: [ROUTER_DIRECTIVES]
 })
 
 export class FoodTypesListComponent implements OnInit {
@@ -23,9 +22,9 @@ export class FoodTypesListComponent implements OnInit {
   constructor(private menuService: MenuService) {}
 
   ngOnInit() {
-    console.log("testing if logs");
+    //console.log("testing if logs");
     //this.recipes = this.menuService.getRecipes();
     this.foodTypes = this.menuService.getAllTypes();
-    console.log(this.recipes);
+    //console.log(this.recipes);
   }
 }

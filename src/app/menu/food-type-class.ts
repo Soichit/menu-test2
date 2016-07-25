@@ -1,4 +1,6 @@
+import {Recipe} from "./recipe";
+
+
 export class FoodType {
-    constructor(public name: string,
-                public foodItems: string[]) {}
+    constructor(public name: string, public foodItems: Recipe[]) {}
 }

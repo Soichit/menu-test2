@@ -1,3 +1,10 @@
-<p>
-  food-items-list works!
-</p>
+
+<div class="col-xs-12">
+  <img src="{{selectedFood.imagePath}}" alt="" class="img-responsive">
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <rb-recipe-item *ngFor="let recipe of selectedType?.foodItems; let i = index" [recipe]="recipe" [recipeId]="i"></rb-recipe-item>
+  </div>
+</div>

@@ -2,7 +2,11 @@
 <div class="row">
   <div class="col-xs-12">
     <ul class="list-group">
-        <food-type *ngFor="let foodType of foodTypes; let i = index" [foodType]="foodType" [typeId]="i"></food-type>
+        <a *ngFor="let foodType of foodTypes; let i = index" [routerLink]="[i]" class="list-group-item clearfix" routerLinkActive="active">
+            <div class="pull-left">
+                <h2 class="list-group-item-heading">{{foodType.name}}</h2>
+            </div>
+        </a>
     </ul>
   </div>
 </div>

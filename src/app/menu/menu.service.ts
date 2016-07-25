@@ -16,10 +16,27 @@ export class MenuService {
     ];
 
     private foodTypes: FoodType[] = [
-        new FoodType('appetizer', ['salad', 'soup', 'biscuits']),
-        new FoodType('lunch', ['sandwich', 'hamburger', 'hotdog']),
-        new FoodType('dinner', ['steak', 'chicken', 'pork']),
-        new FoodType('dessert', ['cake', 'icecream', 'pudding']),
+        new FoodType('Appetizers', [
+            new Recipe('salad', 'description', 'http://cooking.my.panasonic.com/wp-content/uploads/2016/06/salad.jpg', []),
+            new Recipe('soup', 'description', 'http://www.my7daydiet.com/images/wonder-soup.jpg', []),
+            new Recipe('fries', 'description', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQogn8pSGg-Omi2P28rGFQMwaZbYpM5qbmYqNskoOKF-ALSo8aJ', [])
+
+        ]),
+        new FoodType('Lunch', [
+            new Recipe('sandwich', '', '', []),
+            new Recipe('hamburger', '', '', []),
+            new Recipe('hotdog', '', '', [])
+        ]),
+        new FoodType('Dinner', [
+            new Recipe('steak', '', '', []),
+            new Recipe('chicken', '', '', []),
+            new Recipe('pork', '', '', [])
+        ]),
+        new FoodType('Desserts', [
+            new Recipe('cake', '', '', []),
+            new Recipe('icecream', '', '', []),
+            new Recipe('pudding', '', '', [])
+        ])
     ];
 
 
@@ -42,7 +59,11 @@ export class MenuService {
         return this.foodTypes;
     }
     
-    getFoodType(id: number) {
+    getFoodItems(id: number) {
         return this.foodTypes[id];
+    }
+    
+    getFoodItem(id1: number, id2: number) {
+        return this.foodTypes[id1][id2];
     }
 }
