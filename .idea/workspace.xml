@@ -7,15 +7,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/app.routes.js.map" afterPath="$PROJECT_DIR$/dist/app/app.routes.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/dropdown.directive.js.map" afterPath="$PROJECT_DIR$/dist/app/dropdown.directive.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/environment.js.map" afterPath="$PROJECT_DIR$/dist/app/environment.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/header.component.html" afterPath="$PROJECT_DIR$/dist/app/header.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/header.component.js.map" afterPath="$PROJECT_DIR$/dist/app/header.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/index.js.map" afterPath="$PROJECT_DIR$/dist/app/index.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/food-items-list/food-items-list.component.html" afterPath="$PROJECT_DIR$/dist/app/menu/food-items-list/food-items-list.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/food-items-list/food-items-list.component.js" afterPath="$PROJECT_DIR$/dist/app/menu/food-items-list/food-items-list.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/food-items-list/food-items-list.component.js.map" afterPath="$PROJECT_DIR$/dist/app/menu/food-items-list/food-items-list.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/food-items-list/index.js.map" afterPath="$PROJECT_DIR$/dist/app/menu/food-items-list/index.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/food-items-list/recipe-item.component.html" afterPath="$PROJECT_DIR$/dist/app/menu/food-items-list/recipe-item.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/food-items-list/recipe-item.component.js" afterPath="$PROJECT_DIR$/dist/app/menu/food-items-list/recipe-item.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/food-items-list/recipe-item.component.js.map" afterPath="$PROJECT_DIR$/dist/app/menu/food-items-list/recipe-item.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/food-type-class.js.map" afterPath="$PROJECT_DIR$/dist/app/menu/food-type-class.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/food-types-list/food-types-list.component.js.map" afterPath="$PROJECT_DIR$/dist/app/menu/food-types-list/food-types-list.component.js.map" />
@@ -24,20 +20,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/menu-start.component.js.map" afterPath="$PROJECT_DIR$/dist/app/menu/menu-start.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/menu.component.js.map" afterPath="$PROJECT_DIR$/dist/app/menu/menu.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/menu.routes.js.map" afterPath="$PROJECT_DIR$/dist/app/menu/menu.routes.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/menu.service.js" afterPath="$PROJECT_DIR$/dist/app/menu/menu.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/menu.service.js.map" afterPath="$PROJECT_DIR$/dist/app/menu/menu.service.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/menu/recipe.js.map" afterPath="$PROJECT_DIR$/dist/app/menu/recipe.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/shared/index.js.map" afterPath="$PROJECT_DIR$/dist/app/shared/index.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/app/shared/ingredient.js.map" afterPath="$PROJECT_DIR$/dist/app/shared/ingredient.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.js.map" afterPath="$PROJECT_DIR$/dist/main.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/system-config.js.map" afterPath="$PROJECT_DIR$/dist/system-config.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/header.component.html" afterPath="$PROJECT_DIR$/src/app/header.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.html" afterPath="$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.ts" afterPath="$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/menu/food-items-list/recipe-item.component.html" afterPath="$PROJECT_DIR$/src/app/menu/food-items-list/recipe-item.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/menu/food-items-list/recipe-item.component.ts" afterPath="$PROJECT_DIR$/src/app/menu/food-items-list/recipe-item.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/menu/menu.routes.ts" afterPath="$PROJECT_DIR$/src/app/menu/menu.routes.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/menu/menu.service.ts" afterPath="$PROJECT_DIR$/src/app/menu/menu.service.ts" />
     </list>
     <ignored path="menu-test2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,6 +47,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="food-types-list.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/menu/food-types-list/food-types-list.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="menu.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/menu/menu.component.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.service.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/menu/menu.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="316">
@@ -76,6 +75,16 @@
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="food-types-list.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/menu/food-types-list/food-types-list.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="79" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,46 +109,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="food-items-list.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="header.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/header.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="food-items-list.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/menu/food-items-list/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="food-items-list.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -194,11 +181,11 @@
         <option value="$PROJECT_DIR$/src/app/menu/food-types-list/food-types-list.component.ts" />
         <option value="$PROJECT_DIR$/src/app/menu/food-items-list/recipe-item.component.html" />
         <option value="$PROJECT_DIR$/src/app/menu/menu.routes.ts" />
-        <option value="$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.html" />
         <option value="$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.ts" />
         <option value="$PROJECT_DIR$/src/app/menu/food-items-list/recipe-item.component.ts" />
         <option value="$PROJECT_DIR$/src/app/header.component.html" />
         <option value="$PROJECT_DIR$/src/app/menu/menu.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.html" />
       </list>
     </option>
   </component>
@@ -480,12 +467,12 @@
       <workItem from="1469226746732" duration="4424000" />
       <workItem from="1469310355214" duration="3433000" />
       <workItem from="1469397983044" duration="6170000" />
-      <workItem from="1469410623755" duration="9055000" />
+      <workItem from="1469410623755" duration="9712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23082000" />
+    <option name="totallyTimeSpent" value="23739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1323" y="23" width="1237" height="1320" extended-state="0" />
@@ -541,7 +528,7 @@
         <state relative-caret-position="399">
           <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -720,24 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/menu/food-types-list/food-types-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/menu/food-types-list/food-types-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/menu/menu-start.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -751,17 +720,7 @@
         <state relative-caret-position="152">
           <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/menu/food-items-list/recipe-item.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#span#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="e#0#45#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -774,22 +733,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
           <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -842,6 +791,42 @@
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/menu/food-types-list/food-types-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/menu/food-types-list/food-types-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/menu/food-items-list/recipe-item.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#span#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/menu/food-items-list/food-items-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
