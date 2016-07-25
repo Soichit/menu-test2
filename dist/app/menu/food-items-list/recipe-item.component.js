@@ -10,24 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require("@angular/router");
-var menu_service_1 = require("../menu.service");
 var recipe_1 = require("../recipe");
 var RecipeItemComponent = (function () {
-    function RecipeItemComponent(route, menuService) {
-        this.route = route;
-        this.menuService = menuService;
+    function RecipeItemComponent() {
+        //@Input() typeIndex: number;
+        //selectedFood: Recipe;
+        this.foodSelected = new core_1.EventEmitter();
     }
     RecipeItemComponent.prototype.ngOnInit = function () {
+        //console.log(this.recipe);
     };
-    RecipeItemComponent.prototype.ngOnDestroy = function () {
-        this.subscription.unsubscribe();
-    };
-    RecipeItemComponent.prototype.onSelected = function () {
-        var _this = this;
-        this.subscription = this.route.params.subscribe(function (params) {
-            //this.foodIndex = params['id1', 'id2'];
-            _this.selectedFood = _this.menuService.getFoodItem(params['id1'], params['id2']);
-        });
+    RecipeItemComponent.prototype.onSelected = function (index) {
+        //console.log("selectedIndex: " + index);
+        //console.log(this.recipe);
+        this.foodSelected.emit(this.recipe);
     };
     __decorate([
         core_1.Input(), 
@@ -36,7 +32,11 @@ var RecipeItemComponent = (function () {
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Number)
-    ], RecipeItemComponent.prototype, "recipeId", void 0);
+    ], RecipeItemComponent.prototype, "foodIndex", void 0);
+    __decorate([
+        core_1.Output(), 
+        __metadata('design:type', Object)
+    ], RecipeItemComponent.prototype, "foodSelected", void 0);
     RecipeItemComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
@@ -44,7 +44,7 @@ var RecipeItemComponent = (function () {
             templateUrl: 'recipe-item.component.html',
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
-        __metadata('design:paramtypes', [router_1.ActivatedRoute, menu_service_1.MenuService])
+        __metadata('design:paramtypes', [])
     ], RecipeItemComponent);
     return RecipeItemComponent;
 }());

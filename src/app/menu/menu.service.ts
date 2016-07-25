@@ -17,7 +17,11 @@ export class MenuService {
 
     private foodTypes: FoodType[] = [
         new FoodType('Appetizers', [
-            new Recipe('salad', 'description', 'http://cooking.my.panasonic.com/wp-content/uploads/2016/06/salad.jpg', []),
+            new Recipe('salad', 'description', 'http://cooking.my.panasonic.com/wp-content/uploads/2016/06/salad.jpg', [
+                new Ingredient('lettuce', 2),
+                new Ingredient('tomatoes', 4),
+                new Ingredient('olives', 8)
+            ]),
             new Recipe('soup', 'description', 'http://www.my7daydiet.com/images/wonder-soup.jpg', []),
             new Recipe('fries', 'description', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQogn8pSGg-Omi2P28rGFQMwaZbYpM5qbmYqNskoOKF-ALSo8aJ', [])
 
@@ -59,11 +63,12 @@ export class MenuService {
         return this.foodTypes;
     }
     
-    getFoodItems(id: number) {
+    getAllFoods(id: number) {
         return this.foodTypes[id];
     }
     
     getFoodItem(id1: number, id2: number) {
+        console.log("id1: " + id1 + ", id2: " + id2);
         return this.foodTypes[id1][id2];
     }
 }

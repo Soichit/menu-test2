@@ -1,8 +1,6 @@
 
-import {Component, Input, OnInit, OnDestroy} from '@angular/core';
-import {ROUTER_DIRECTIVES, ActivatedRoute} from "@angular/router";
-import {Subscription} from "rxjs/Rx";
-import {MenuService} from "../menu.service";
+import {Component, Input, Output, EventEmitter, OnInit, OnDestroy} from '@angular/core';
+import {ROUTER_DIRECTIVES, ActivatedRoute, Router} from "@angular/router";
 import {Recipe} from "../recipe";
 
 
@@ -12,36 +10,23 @@ import {Recipe} from "../recipe";
   templateUrl: 'recipe-item.component.html',
   directives: [ROUTER_DIRECTIVES]
 })
-export class RecipeItemComponent implements {
-  @Input() recipe: Recipe, recipeId: number;
-
-
-  /*
-  selectedFood: Recipe;
-  //private foodIndex: number = 1;
-  private subscription: Subscription;
+export class RecipeItemComponent implements OnInit {
+  @Input() recipe: Recipe;
+  @Input() foodIndex: number;
+  //@Input() typeIndex: number;
+  //selectedFood: Recipe;
+  @Output() foodSelected = new EventEmitter<Recipe>();
 
   
-  constructor(private route: ActivatedRoute,
-              private menuService: MenuService) {}
-
   ngOnInit() {
+    //console.log(this.recipe);
   }
 
-
-  ngOnDestroy() {
-    this.subscription.unsubscribe();
+  onSelected(index: number) {
+    //console.log("selectedIndex: " + index);
+    //console.log(this.recipe);
+    this.foodSelected.emit(this.recipe);
   }
-
-  onSelected() {
-    this.subscription = this.route.params.subscribe(
-        (params: any) => {
-          //this.foodIndex = params['id1', 'id2'];
-          this.selectedFood = this.menuService.getFoodItem(params['id1'], params['id2']);
-        }
-    )
-  }
-  */
 }
 
 

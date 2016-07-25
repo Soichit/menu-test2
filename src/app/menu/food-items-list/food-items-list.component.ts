@@ -15,6 +15,7 @@ import {Recipe} from "../recipe";
 })
 export class FoodItemsListComponent implements OnInit, OnDestroy {
   selectedType: FoodType;
+  selectedFood: Recipe;
   
   private typeIndex: number = 1;
   private subscription: Subscription;
@@ -26,12 +27,16 @@ export class FoodItemsListComponent implements OnInit, OnDestroy {
     this.subscription = this.route.params.subscribe(
         (params: any) => {
           this.typeIndex = params['id'];
-          this.selectedType = this.menuService.getFoodItems(this.typeIndex);
+          this.selectedType = this.menuService.getAllFoods(this.typeIndex);
         }
     )
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
+  }
+
+  onClick() {
+    //console.log(this.selectedFood);
   }
 }

@@ -22,11 +22,14 @@ var FoodItemsListComponent = (function () {
         var _this = this;
         this.subscription = this.route.params.subscribe(function (params) {
             _this.typeIndex = params['id'];
-            _this.selectedType = _this.menuService.getFoodItems(_this.typeIndex);
+            _this.selectedType = _this.menuService.getAllFoods(_this.typeIndex);
         });
     };
     FoodItemsListComponent.prototype.ngOnDestroy = function () {
         this.subscription.unsubscribe();
+    };
+    FoodItemsListComponent.prototype.onClick = function () {
+        //console.log(this.selectedFood);
     };
     FoodItemsListComponent = __decorate([
         core_1.Component({
