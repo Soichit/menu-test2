@@ -23,28 +23,31 @@ var MenuService = (function () {
         // ];
         this.foodTypes = [
             new food_type_class_1.FoodType('Appetizers', [
-                new recipe_1.Recipe('salad', 5.85, 'description', 'http://cooking.my.panasonic.com/wp-content/uploads/2016/06/salad.jpg', [
+                new recipe_1.Recipe('salad', 5.85, ' a dish consisting of small pieces of food, which may be mixed with a sauce or salad dressing', 'http://cooking.my.panasonic.com/wp-content/uploads/2016/06/salad.jpg', [
                     new ingredient_1.Ingredient('lettuce', 2),
                     new ingredient_1.Ingredient('tomatoes', 4),
                     new ingredient_1.Ingredient('olives', 8)
                 ]),
-                new recipe_1.Recipe('soup', 3.95, 'description', 'http://www.my7daydiet.com/images/wonder-soup.jpg', []),
-                new recipe_1.Recipe('fries', 2.99, 'description', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQogn8pSGg-Omi2P28rGFQMwaZbYpM5qbmYqNskoOKF-ALSo8aJ', [])
+                new recipe_1.Recipe('soup', 3.95, 'a primarily liquid food, generally served warm that is made by combining ingredients such as meat and vegetables with stock, juice, water, or another', 'http://www.my7daydiet.com/images/wonder-soup.jpg', [
+                    new ingredient_1.Ingredient('garlic', 1),
+                    new ingredient_1.Ingredient('stew', 5)
+                ]),
+                new recipe_1.Recipe('fries', 2.99, ' batonnet or allumette cut potato that are normally deep-fried but could also be cooked in an oven.', 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQogn8pSGg-Omi2P28rGFQMwaZbYpM5qbmYqNskoOKF-ALSo8aJ', [])
             ]),
             new food_type_class_1.FoodType('Lunch', [
-                new recipe_1.Recipe('sandwich', 6.99, '', '', []),
-                new recipe_1.Recipe('hamburger', 6.99, '', '', []),
-                new recipe_1.Recipe('hotdog', 6.99, '', '', [])
+                new recipe_1.Recipe('sandwich', 6.99, 'description', 'http://pngimg.com/upload/burger_sandwich_PNG4150.png', []),
+                new recipe_1.Recipe('hamburger', 6.99, 'description', 'http://pngimg.com/upload/burger_sandwich_PNG4114.png', []),
+                new recipe_1.Recipe('hotdog', 6.99, 'description', 'http://static.parade.com/wp-content/uploads/2013/07/hot-dog-ftr.jpg', [])
             ]),
             new food_type_class_1.FoodType('Dinner', [
-                new recipe_1.Recipe('steak', 6.99, '', '', []),
-                new recipe_1.Recipe('chicken', 6.99, '', '', []),
-                new recipe_1.Recipe('pork', 6.99, '', '', [])
+                new recipe_1.Recipe('steak', 6.99, 'description', 'http://weeklygravy.com/wp-content/uploads/2014/01/steak.jpg', []),
+                new recipe_1.Recipe('chicken', 6.99, 'description', 'http://seattle.eat24hours.com/files/cuisines/v4/chicken.jpg', []),
+                new recipe_1.Recipe('pork', 6.99, 'description', 'http://images.media-allrecipes.com/images/51219.jpg', [])
             ]),
             new food_type_class_1.FoodType('Desserts', [
-                new recipe_1.Recipe('cake', 6.99, '', '', []),
-                new recipe_1.Recipe('ice cream', 6.99, '', '', []),
-                new recipe_1.Recipe('pudding', 6.99, '', '', [])
+                new recipe_1.Recipe('cake', 6.99, 'description', 'http://crossfit601.com/wp-content/uploads/2015/03/article-0-14FA374C000005DC-973_634x467.jpg', []),
+                new recipe_1.Recipe('ice cream', 6.99, 'description', 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVSpzRHstdEH1lWs9LtCoWqnIk5nZngD6jaynyTnRdokpgyjC_', []),
+                new recipe_1.Recipe('pudding', 6.99, 'description', 'http://img.sndimg.com/food/image/upload/v1/img/recipes/29/19/9/hqWrjoTdRtPbKSb3rwWR_Oreo%20Pudding%202.jpg', [])
             ])
         ];
     }
